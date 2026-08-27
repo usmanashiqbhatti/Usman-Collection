@@ -16,6 +16,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+    
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -30,7 +31,7 @@
             justify-content: space-between;
             align-items: center;
             background-color: rgba(0, 0, 0, 0.95);
-            padding: 0 5%;
+            padding: 0 6%;
             height: 80px;
             width: 100%;
             position: fixed;
@@ -335,8 +336,78 @@
                 flex-direction: column;
             }
         }
+         .p3{ 
+              display: flex;
+              /* grid-template-columns: 1fr 1fr 1fr ; */
+
+              flex-wrap: wrap;
+              gap: 20px;
+
+         }
+        .p3 .cc1{
+                 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                 height: 230px;
+                 width: 350px;
+                 border: 1px solid rgb(57, 55, 55); 
+                 padding: 20px;
+                 margin: 20px;
+        }
+        .p3 .cc1 h1{
+            font-size: 20px;     
+        }
+         .p3 .cc1 p{
+                    font-size: 14px;
+         }
+         .p3 .cc1:hover{
+                           transform: all;
+                     transition-duration: 0.5s;
+                     transition-delay: 0.1;
+                     transform: translatey(10px);
+                      border: 2px solid  rgb(218, 168, 76); 
+
+                
+         }
+         .p3 .cc1:hover h1{
+                   color: rgb(218, 168, 76);
+                
+         }
+       .grid .child{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            color: white;
+            margin: 30px;
+            margin-top: 30px;
+
+
+        }
+        .child h1{
+                     color: rgb(218, 168, 76);
+        }
+
+        .grid .child5{
+            margin: 50px;
+        }
+        .grid .child5 button{
+                          border: 2px solid  rgb(218, 168, 76);
+                          /* margin-left: 36rem; */
+                          text-align: center;
+                          margin: auto;
+                          display: block;
+                          /* margin: 50px; */
+                          padding: 10px 20px;
+                         background-color: rgb(218, 168, 76); 
+        }
+        .grid .child5  button:hover{
+                                       transform: all;
+                     transition-duration: 0.5s;
+                     transition-delay: 0.1;
+                     transform: translatey(5px);
+                     color: #ffffff;
+        }
     </style>
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <body>
 
     <!-- Navigation Header -->
@@ -413,6 +484,55 @@
         <h1>Why Choose <span style="color: rgb(218,168,76);">Usman Collection</span></h1>
         <p>Where every detail whispers luxury, and every creation carries the soul of elegance.</p>
     </div>
+           <div class="p3">
+              <div class="cc1">
+                <i class="fa-solid fa-star" style="color:rgb(218,168,76) ; font-size: 60px; padding: 5px;"></i>
+                <h1>Authentic usman Collection Craftsmanship</h1>
+                <p>Every usman Collection piece is handcrafted by master artisans across Pakistan, with centuries of heritage woven into every stitch and detail.</p>
+              </div>
+              <div class="cc1">
+                <i class="fa-solid fa-wrench" style="color:rgb(218,168,76) ; font-size: 60px; padding: 5px;"></i>
+                <h1>Timeless Elegance, Rooted in Culture</h1>
+                <p>Our designs fuse contemporary aesthetics with Pakistan rich cultural heritage where tradition meets modern luxury.</p>
+              </div>
+              <div class="cc1">
+                <i class="fa-solid fa-crown" style="color:rgb(218,168,76) ; font-size: 60px; padding: 5px;"></i>
+                <h1>Curated Zahra Collection Luxury</h1>
+                <p>An exclusive collection curated for the discerning tastes of Pakistan finest clientele, from Karachi to Lahore and beyond.</p>
+              </div>
+              <div class="cc1">
+                <i class="fa-solid fa-leaf" style="color:rgb(218,168,76) ; font-size: 60px; padding: 5px;"></i>
+                <h1> Sourced from Our Soil</h1>
+                <p> Ethically sourced materials and eco-conscious production methods that honour both our craft and our beloved Pakistan.</p>
+              </div>
+              <div class="cc1">
+                <i class="fa-solid fa-heart" style="color:rgb(218,168,76) ; font-size: 60px; padding: 5px;"></i>
+                <h1> A Trusted Name Across Pakistan</h1>
+                <p> Loved and trusted by connoisseurs across all major cities of Pakistan — a symbol of pride and quality in every home.</p>
+              </div>
+              <div class="cc1">
+                <i class="fa-solid fa-headset" style="color:rgb(218,168,76) ; font-size: 60px; padding: 5px;"></i>
+                <h1>Personalized Concierge Service</h1>
+                <p> Dedicated white-glove service with private viewings, at-home trials, and lifelong care for your treasured pieces.</p>
+              </div>
+           </div>
+            <div class="grid" >
+            <div class="child">
+            <h1> 15+</h1>
+            <h1>  50k+ </h1>
+            <h1> 20+</h1>
+            <h1> 100%</h1>
+          </div>
+          <div class="child">
+            <p> campaigns</p>
+            <p> happy Pakistan</p>
+            <p> cities covered </p>
+            <p> Authenticity </p>
+          </div>
+          <div class="child5">
+                            <button> VIEW ALL Collection</button>
+          </div>
+          </div>
 
     <!-- Flickity JavaScript CDN -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
